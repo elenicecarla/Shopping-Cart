@@ -3,8 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    
+    <form class="form-horizontal, form" method="post">
+      <fieldset>
+        <legend>Produt</legend>
+       <label class="col-sm-2 control-label" for="name">
+            Name
+           <input class="form-control" type="text" required id="name">
+       </label>
+       
+       <label class="col-sm-2 control-label" for="price">
+            Price
+           <input class="form-control" type="text" required id="price">
+       </label>
+       <button class="btn btn-default" type="submit">Add</button>
+      </fieldset>
+      
+       <fieldset>
+        <legend>Shopping Cart</legend>
+       
+      </fieldset>
+      
+       <fieldset>
+       <legend> </legend>
+        <label class="col-sm-2 control-label">Total</label>   
+        <span id="total">0</span>
+      </fieldset>
+    </form>
 </body>
 </html>

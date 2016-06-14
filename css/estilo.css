@@ -1,0 +1,10 @@
+
+.form{
+    width:800px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: left;
+}
+#name{
+    width:115px
+}
