@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
     <form class="form-horizontal, form" method="post">
-      <fieldset>
-        <legend>Produt</legend>
-       <label class="col-sm-2 control-label" for="name">
+        <fieldset>
+            <legend>Produt</legend>
+            <label class="col-sm-2 control-label" for="name">
             Name
            <input class="form-control" type="text" required id="name">
        </label>
-       
-       <label class="col-sm-2 control-label" for="price">
+
+            <label class="col-sm-2 control-label" for="price">
             Price
            <input class="form-control" type="text" required id="price">
        </label>
-       <button class="btn btn-default" type="submit">Add</button>
-      </fieldset>
-      
-       <fieldset>
-        <legend>Shopping Cart</legend>
-       
-      </fieldset>
-      
-       <fieldset>
-       <legend> </legend>
-        <label class="col-sm-2 control-label">Total</label>   
-        <span id="total">0</span>
-      </fieldset>
+            <button class="btn btn-default" type="submit">Add</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Shopping Cart</legend>
+            <table id=tabela class="table table-hover table-striped table-condensed">
+                <tr>
+                    <td>produto</td>
+                    <td>preço</td>
+                </tr>
+                <tr>
+                    <td>produto</td>
+                    <td>preço</td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend> </legend>
+            <label class="col-sm-2 control-label">Total</label>
+            <span id="total">0</span>
+        </fieldset>
     </form>
+    <script src="js/ProdutService.js"></script>
+    <script src="js/HTMLService.js"></script>
+    <script src="js/ProdutController.js"></script>
 </body>
+
 </html>
